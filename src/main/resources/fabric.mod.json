@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "pine-wood",
+	"version": "1.0.0",
+	"name": "Pine Wood",
+	"description": "Adds Pine Wood type to spawn on already existing 'Pine' (Spruce) trees in game",
+	"authors": [
+		"BlueSteel42"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/pine-wood/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"bluesteel42.pinewood.PineWood"
+		],
+		"client": [
+			"bluesteel42.pinewood.PineWoodClient"
+		],
+		"fabric-datagen": [
+			"bluesteel42.pinewood.PineWoodDataGenerator"
+		]
+	},
+	"mixins": [
+		"pine-wood.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.21.5",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

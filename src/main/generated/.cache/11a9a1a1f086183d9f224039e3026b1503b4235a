@@ -1,0 +1,19 @@
+// 1.21.5	-999999999-01-01T00:00:00	Pine Wood/Tags for minecraft:block
+fa7058d3f2072eeebb667867e551db32c3740541 data/minecraft/tags/block/ceiling_hanging_signs.json
+c430835f62b4a902b377732a20ddd72a44d360e5 data/minecraft/tags/block/fence_gates.json
+d4c08b12ccb73617200238b7d60b6139eabba28d data/minecraft/tags/block/flower_pots.json
+deeadf1e3d3f20083dd2aed934a90f9cbeac1571 data/minecraft/tags/block/leaves.json
+6430ad566a28643a36612a2fba08a9d193ad9d4d data/minecraft/tags/block/logs_that_burn.json
+866002b09e969cc5e8101451bc517d30a238922a data/minecraft/tags/block/planks.json
+0ca502a661f3d038f76e6f0f7e34a202d68f3fef data/minecraft/tags/block/saplings.json
+5e83caeb14536c973e337bea670a95af21fae556 data/minecraft/tags/block/standing_signs.json
+864ccad9ffe2aa0de07eadcacc7a87d8643c08e1 data/minecraft/tags/block/wall_hanging_signs.json
+b10cc25199ccfb48614c7d803aef8b3071f836b9 data/minecraft/tags/block/wall_signs.json
+e56353137d69f6719a2f23db7a55495a6551e287 data/minecraft/tags/block/wooden_buttons.json
+0eb937cf9238dbf60050a2f6724c40afab85465b data/minecraft/tags/block/wooden_doors.json
+92c11381e7c372cd3315608f1a53f8e0af0969f2 data/minecraft/tags/block/wooden_fences.json
+f9138372c45af8ddcd1e066dd22f7790fe13bc4d data/minecraft/tags/block/wooden_pressure_plates.json
+54f728175dac33c6d93f70bd23fee89f9a0e67c0 data/minecraft/tags/block/wooden_slabs.json
+e8ad7a02f775a5a46636b75ff33f7ad4c23f713a data/minecraft/tags/block/wooden_stairs.json
+202355591bc46e322ae514c5f704b55223770d84 data/minecraft/tags/block/wooden_trapdoors.json
+4dd42db2d20634164906b919773b012cc1363aaf data/pine-wood/tags/block/pine_logs.json

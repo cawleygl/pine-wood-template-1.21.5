@@ -1,0 +1,19 @@
+// 1.21.5	-999999999-01-01T00:00:00	Pine Wood/Block Loot Tables
+2dc599909501055134c65d10c969513fad5c8cd9 data/pine-wood/loot_table/blocks/pine_button.json
+ffc3a1dce673c324295fdb8e96fb705bc46d97d7 data/pine-wood/loot_table/blocks/pine_door.json
+8af4430c76788c166a8d088bd601f5bfa7082576 data/pine-wood/loot_table/blocks/pine_fence.json
+45e84d1860c033ac4fff5f4bb5d8924b4db78039 data/pine-wood/loot_table/blocks/pine_fence_gate.json
+f2b27607db29534067d320e482acd6df3b256246 data/pine-wood/loot_table/blocks/pine_hanging_sign.json
+469c4a10384a2ce5854d848f887f373698a468bf data/pine-wood/loot_table/blocks/pine_leaves.json
+14b5ada2c77acb6b26d033dbe86163f9dc93c277 data/pine-wood/loot_table/blocks/pine_log.json
+287ec1c4bf3621649de0818393210dd0398ed2c4 data/pine-wood/loot_table/blocks/pine_planks.json
+52e977adb243f7c2602c8f772ae52d2b078e3bec data/pine-wood/loot_table/blocks/pine_pressure_plate.json
+5a3b85be6a1765cab1ba846ad910a03000e0feeb data/pine-wood/loot_table/blocks/pine_sapling.json
+423866625b61fb10ffacc66e36c81482d0562e16 data/pine-wood/loot_table/blocks/pine_slab.json
+09e7ba817b35df7810002ac2de692d10a9e38018 data/pine-wood/loot_table/blocks/pine_stairs.json
+1d1f58183b297c6a734a162d6b70f133c3dfdeb3 data/pine-wood/loot_table/blocks/pine_standing_sign.json
+640a1d234323e2ea5f27a0008143a6d8a2599e94 data/pine-wood/loot_table/blocks/pine_trapdoor.json
+5635fc4f5821967093535e1eb376f4c44dff45e4 data/pine-wood/loot_table/blocks/pine_wood.json
+d6af3e7e759e86363c3f44bfd6ba451fbf9845b1 data/pine-wood/loot_table/blocks/potted_pine_sapling.json
+0310b97f6b40cd8197a8438c6bd6dbea084c42f4 data/pine-wood/loot_table/blocks/stripped_pine_log.json
+8804bc46a09633b7b54cd4603f72bfa0eb1d749f data/pine-wood/loot_table/blocks/stripped_pine_wood.json
