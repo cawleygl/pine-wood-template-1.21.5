@@ -1,11 +1,12 @@
 package bluesteel42.pinewood;
 
-import bluesteel42.pinewood.datagen.ModBlockTagProvider;
-import bluesteel42.pinewood.datagen.ModItemTagProvider;
-import bluesteel42.pinewood.datagen.ModLootTableProvider;
-import bluesteel42.pinewood.datagen.ModModelProvider;
+import bluesteel42.pinewood.datagen.*;
+import bluesteel42.pinewood.world.ModConfiguredFeatures;
+import bluesteel42.pinewood.world.ModPlacedFeatures;
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
+import net.minecraft.registry.RegistryBuilder;
+import net.minecraft.registry.RegistryKeys;
 
 public class PineWoodDataGenerator implements DataGeneratorEntrypoint {
 	@Override
@@ -15,6 +16,13 @@ public class PineWoodDataGenerator implements DataGeneratorEntrypoint {
 		pack.addProvider(ModItemTagProvider::new);
 		pack.addProvider(ModLootTableProvider::new);
 		pack.addProvider(ModModelProvider::new);
+		pack.addProvider(ModRegistryDataGenerator::new);
+	}
+
+	@Override
+	public void buildRegistry(RegistryBuilder registryBuilder) {
+		registryBuilder.addRegistry(RegistryKeys.CONFIGURED_FEATURE, ModConfiguredFeatures::bootstrap);
+		registryBuilder.addRegistry(RegistryKeys.PLACED_FEATURE, ModPlacedFeatures::bootstrap);
 	}
 
 }
