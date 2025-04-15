@@ -25,15 +25,15 @@ import java.util.function.Function;
 
 public class ModBlocks {
 
-    public static final Block PINE_LOG = registerBlock("pine_log", PillarBlock::new, Blocks.createLogSettings(MapColor.TERRACOTTA_WHITE, MapColor.TERRACOTTA_ORANGE, BlockSoundGroup.WOOD));
+    public static final Block PINE_LOG = registerBlock("pine_log", PillarBlock::new, Blocks.createLogSettings(MapColor.RAW_IRON_PINK, MapColor.TERRACOTTA_ORANGE, BlockSoundGroup.WOOD));
     public static final Block PINE_WOOD = registerBlock("pine_wood", PillarBlock::new, Blocks.createLogSettings(MapColor.TERRACOTTA_ORANGE, MapColor.TERRACOTTA_ORANGE, BlockSoundGroup.WOOD));
-    public static final Block STRIPPED_PINE_LOG = registerBlock("stripped_pine_log", PillarBlock::new, Blocks.createLogSettings(MapColor.TERRACOTTA_WHITE, MapColor.TERRACOTTA_WHITE, BlockSoundGroup.WOOD));
-    public static final Block STRIPPED_PINE_WOOD = registerBlock("stripped_pine_wood", PillarBlock::new, Blocks.createLogSettings(MapColor.TERRACOTTA_WHITE, MapColor.TERRACOTTA_WHITE, BlockSoundGroup.WOOD));
+    public static final Block STRIPPED_PINE_LOG = registerBlock("stripped_pine_log", PillarBlock::new, Blocks.createLogSettings(MapColor.RAW_IRON_PINK, MapColor.RAW_IRON_PINK, BlockSoundGroup.WOOD));
+    public static final Block STRIPPED_PINE_WOOD = registerBlock("stripped_pine_wood", PillarBlock::new, Blocks.createLogSettings(MapColor.RAW_IRON_PINK, MapColor.RAW_IRON_PINK, BlockSoundGroup.WOOD));
     public static final Block PINE_PLANKS = registerBlock(
             "pine_planks",
             Block::new,
             AbstractBlock.Settings.create()
-                    .mapColor(MapColor.TERRACOTTA_WHITE)
+                    .mapColor(MapColor.RAW_IRON_PINK)
                     .instrument(NoteBlockInstrument.BASS)
                     .strength(2.0F, 3.0F)
                     .sounds(BlockSoundGroup.WOOD)
@@ -48,7 +48,7 @@ public class ModBlocks {
             "pine_slab",
             SlabBlock::new,
             AbstractBlock.Settings.create()
-                    .mapColor(MapColor.TERRACOTTA_WHITE)
+                    .mapColor(MapColor.RAW_IRON_PINK)
                     .instrument(NoteBlockInstrument.BASS)
                     .strength(2.0F, 3.0F)
                     .sounds(BlockSoundGroup.WOOD)
@@ -66,7 +66,7 @@ public class ModBlocks {
             "pine_pressure_plate",
             settings -> new PressurePlateBlock(BlockSetType.OAK, settings),
             AbstractBlock.Settings.create()
-                    .mapColor(MapColor.TERRACOTTA_WHITE)
+                    .mapColor(MapColor.RAW_IRON_PINK)
                     .solid()
                     .instrument(NoteBlockInstrument.BASS)
                     .noCollision()
@@ -78,7 +78,7 @@ public class ModBlocks {
             "pine_fence",
             FenceBlock::new,
             AbstractBlock.Settings.create()
-                    .mapColor(MapColor.TERRACOTTA_WHITE)
+                    .mapColor(MapColor.RAW_IRON_PINK)
                     .instrument(NoteBlockInstrument.BASS)
                     .strength(2.0F, 3.0F)
                     .sounds(BlockSoundGroup.WOOD)
@@ -88,7 +88,7 @@ public class ModBlocks {
             "pine_fence_gate",
             settings -> new FenceGateBlock(WoodType.OAK, settings),
             AbstractBlock.Settings.create()
-                    .mapColor(MapColor.TERRACOTTA_WHITE)
+                    .mapColor(MapColor.RAW_IRON_PINK)
                     .solid()
                     .instrument(NoteBlockInstrument.BASS)
                     .strength(2.0F, 3.0F)
@@ -98,7 +98,7 @@ public class ModBlocks {
             "pine_door",
             settings -> new DoorBlock(BlockSetType.OAK, settings),
             AbstractBlock.Settings.create()
-                    .mapColor(MapColor.TERRACOTTA_WHITE)
+                    .mapColor(MapColor.RAW_IRON_PINK)
                     .instrument(NoteBlockInstrument.BASS)
                     .strength(3.0F)
                     .nonOpaque()
@@ -109,7 +109,7 @@ public class ModBlocks {
             "pine_trapdoor",
             settings -> new TrapdoorBlock(BlockSetType.OAK, settings),
             AbstractBlock.Settings.create()
-                    .mapColor(MapColor.TERRACOTTA_WHITE)
+                    .mapColor(MapColor.RAW_IRON_PINK)
                     .instrument(NoteBlockInstrument.BASS)
                     .strength(3.0F)
                     .nonOpaque()
@@ -123,26 +123,26 @@ public class ModBlocks {
             "pine_standing_sign",
             settings -> new TerraformSignBlock(PINE_SIGN_TEXTURE, settings),
             AbstractBlock.Settings.copy(Blocks.OAK_SIGN)
-                    .mapColor(MapColor.TERRACOTTA_WHITE)
+                    .mapColor(MapColor.RAW_IRON_PINK)
     );
 
     public static final Block PINE_WALL_SIGN = registerBlockWithoutItem(
             "pine_wall_sign",
             settings -> new TerraformWallSignBlock(PINE_SIGN_TEXTURE, settings),
-            AbstractBlock.Settings.copy(Blocks.OAK_SIGN).mapColor(MapColor.TERRACOTTA_WHITE).lootTable(PINE_STANDING_SIGN.getLootTableKey()).overrideTranslationKey(PINE_STANDING_SIGN.getTranslationKey())
+            AbstractBlock.Settings.copy(Blocks.OAK_SIGN).mapColor(MapColor.RAW_IRON_PINK).lootTable(PINE_STANDING_SIGN.getLootTableKey()).overrideTranslationKey(PINE_STANDING_SIGN.getTranslationKey())
     );
 
     public static final Block PINE_HANGING_SIGN = registerBlockWithoutItem(
             "pine_hanging_sign",
             settings -> new TerraformHangingSignBlock(PINE_HANGING_SIGN_TEXTURE, PINE_HANGING_GUI_SIGN_TEXTURE, settings),
             AbstractBlock.Settings.copy(Blocks.OAK_HANGING_SIGN)
-                    .mapColor(MapColor.TERRACOTTA_WHITE)
+                    .mapColor(MapColor.RAW_IRON_PINK)
     );
 
     public static final Block PINE_WALL_HANGING_SIGN = registerBlockWithoutItem(
             "pine_hanging_wall_sign",
             settings -> new TerraformWallHangingSignBlock(PINE_HANGING_SIGN_TEXTURE, PINE_HANGING_GUI_SIGN_TEXTURE, settings),
-            AbstractBlock.Settings.copy(Blocks.OAK_HANGING_SIGN).mapColor(MapColor.TERRACOTTA_WHITE).lootTable(PINE_HANGING_SIGN.getLootTableKey()).overrideTranslationKey(PINE_HANGING_SIGN.getTranslationKey())
+            AbstractBlock.Settings.copy(Blocks.OAK_HANGING_SIGN).mapColor(MapColor.RAW_IRON_PINK).lootTable(PINE_HANGING_SIGN.getLootTableKey()).overrideTranslationKey(PINE_HANGING_SIGN.getTranslationKey())
     );
 
     public static final BlockFamily PINE_SIGN_FAMILY = BlockFamilies.register(ModBlocks.PINE_PLANKS)
