@@ -30,8 +30,8 @@ import java.util.List;
 public class ModConfiguredFeatures {
 
     public static final RegistryKey<ConfiguredFeature<?, ?>> PINE_BEES_005_KEY = registerKey("pine_bees_005");
-    public static final RegistryKey<ConfiguredFeature<?, ?>> MEGA_PINE_KEY = registerKey("mega_pine");
-    public static final RegistryKey<ConfiguredFeature<?, ?>> MEGA_PINE_SPRUCE_KEY = registerKey("mega_pine_spruce");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> MEGA_PINE_HIGH_KEY = registerKey("mega_pine_high");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> MEGA_PINE_LOW_KEY = registerKey("mega_pine_low");
     public static final RegistryKey<ConfiguredFeature<?, ?>> FALLEN_PINE_TREE_KEY = registerKey("fallen_pine_tree");
 
     public static void bootstrap(Registerable<ConfiguredFeature<?, ?>> context) {
@@ -46,7 +46,7 @@ public class ModConfiguredFeatures {
                 new TwoLayersFeatureSize(2, 0, 2)
         ).ignoreVines().decorators(List.of(new BeehiveTreeDecorator(0.05F))).build());
 
-        register(context, MEGA_PINE_KEY, Feature.TREE, new TreeFeatureConfig.Builder(
+        register(context, MEGA_PINE_HIGH_KEY, Feature.TREE, new TreeFeatureConfig.Builder(
                 BlockStateProvider.of(ModBlocks.PINE_LOG),
                 new GiantTrunkPlacer(13, 2, 14),
 
@@ -56,12 +56,12 @@ public class ModConfiguredFeatures {
                 new TwoLayersFeatureSize(1, 1, 2)
         ).decorators(ImmutableList.of(new AlterGroundTreeDecorator(BlockStateProvider.of(Blocks.PODZOL)))).build());
 
-        register(context, MEGA_PINE_SPRUCE_KEY, Feature.TREE, new TreeFeatureConfig.Builder(
+        register(context, MEGA_PINE_LOW_KEY, Feature.TREE, new TreeFeatureConfig.Builder(
                 BlockStateProvider.of(ModBlocks.PINE_LOG),
                 new GiantTrunkPlacer(13, 2, 14),
 
                 BlockStateProvider.of(ModBlocks.PINE_LEAVES),
-                new MegaPineFoliagePlacer(ConstantIntProvider.create(0), ConstantIntProvider.create(0), UniformIntProvider.create(13, 17)),
+                new MegaPineFoliagePlacer(ConstantIntProvider.create(0), ConstantIntProvider.create(0), UniformIntProvider.create(7, 11)),
 
                 new TwoLayersFeatureSize(1, 1, 2)
         ).decorators(ImmutableList.of(new AlterGroundTreeDecorator(BlockStateProvider.of(Blocks.PODZOL)))).build());

@@ -11,8 +11,8 @@ public class ModSaplingGenerators {
     public static final SaplingGenerator PINE = new SaplingGenerator(
             PineWood.MOD_ID + ":pine",
             0.5F,
-            Optional.of(ModConfiguredFeatures.MEGA_PINE_KEY),
-            Optional.of(ModConfiguredFeatures.MEGA_PINE_SPRUCE_KEY),
+            Optional.of(ModConfiguredFeatures.MEGA_PINE_HIGH_KEY),
+            Optional.of(ModConfiguredFeatures.MEGA_PINE_LOW_KEY),
             Optional.of(TreeConfiguredFeatures.PINE),
             Optional.empty(),
             Optional.of(ModConfiguredFeatures.PINE_BEES_005_KEY),

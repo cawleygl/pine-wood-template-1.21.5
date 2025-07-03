@@ -1,5 +1,5 @@
 {
-  "feature": "pine-wood:mega_pine",
+  "feature": "pine-wood:mega_pine_low",
   "placement": [
     {
       "type": "minecraft:block_predicate_filter",

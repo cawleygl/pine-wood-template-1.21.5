@@ -5,15 +5,11 @@
     "features": [
       {
         "chance": 0.025641026,
-        "feature": "pine-wood:mega_pine_spruce"
+        "feature": "pine-wood:mega_pine_low"
       },
       {
         "chance": 0.30769232,
-        "feature": "pine-wood:mega_pine"
-      },
-      {
-        "chance": 0.33333334,
-        "feature": "minecraft:pine_checked"
+        "feature": "pine-wood:mega_pine_high"
       },
       {
         "chance": 0.0125,

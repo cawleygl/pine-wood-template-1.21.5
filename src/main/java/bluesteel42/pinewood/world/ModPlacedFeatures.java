@@ -15,8 +15,8 @@ import java.util.List;
 public class ModPlacedFeatures {
 
     public static final RegistryKey<PlacedFeature> PINE_BEES_005_PLACED_KEY = registerKey("pine_bees_005");
-    public static final RegistryKey<PlacedFeature> MEGA_PINE_PLACED_KEY = registerKey("mega_pine");
-    public static final RegistryKey<PlacedFeature> MEGA_PINE_SPRUCE_PLACED_KEY = registerKey("mega_pine_spruce");
+    public static final RegistryKey<PlacedFeature> MEGA_PINE_HIGH_PLACED_KEY = registerKey("mega_pine_high");
+    public static final RegistryKey<PlacedFeature> MEGA_PINE_LOW_PLACED_KEY = registerKey("mega_pine_low");
     public static final RegistryKey<PlacedFeature> FALLEN_PINE_PLACED_KEY = registerKey("fallen_pine_tree");
 
     public static void bootstrap(Registerable<PlacedFeature> context) {
@@ -25,10 +25,10 @@ public class ModPlacedFeatures {
         register(context, PINE_BEES_005_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.PINE_BEES_005_KEY),
                 PlacedFeatures.wouldSurvive(ModBlocks.PINE_SAPLING)
         );
-        register(context, MEGA_PINE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.MEGA_PINE_KEY),
+        register(context, MEGA_PINE_HIGH_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.MEGA_PINE_HIGH_KEY),
                 PlacedFeatures.wouldSurvive(ModBlocks.PINE_SAPLING)
         );
-        register(context, MEGA_PINE_SPRUCE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.MEGA_PINE_SPRUCE_KEY),
+        register(context, MEGA_PINE_LOW_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.MEGA_PINE_LOW_KEY),
                 PlacedFeatures.wouldSurvive(ModBlocks.PINE_SAPLING)
         );
         register(context, FALLEN_PINE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.FALLEN_PINE_TREE_KEY),
