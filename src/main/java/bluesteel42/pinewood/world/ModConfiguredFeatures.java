@@ -16,21 +16,35 @@ import net.minecraft.util.math.intprovider.UniformIntProvider;
 import net.minecraft.world.gen.feature.*;
 import net.minecraft.world.gen.feature.size.TwoLayersFeatureSize;
 import net.minecraft.world.gen.foliage.MegaPineFoliagePlacer;
+import net.minecraft.world.gen.foliage.PineFoliagePlacer;
 import net.minecraft.world.gen.stateprovider.BlockStateProvider;
 import net.minecraft.world.gen.stateprovider.WeightedBlockStateProvider;
 import net.minecraft.world.gen.treedecorator.AlterGroundTreeDecorator;
 import net.minecraft.world.gen.treedecorator.AttachedToLogsTreeDecorator;
+import net.minecraft.world.gen.treedecorator.BeehiveTreeDecorator;
 import net.minecraft.world.gen.trunk.GiantTrunkPlacer;
+import net.minecraft.world.gen.trunk.StraightTrunkPlacer;
 
 import java.util.List;
 
 public class ModConfiguredFeatures {
 
+    public static final RegistryKey<ConfiguredFeature<?, ?>> PINE_BEES_005_KEY = registerKey("pine_bees_005");
     public static final RegistryKey<ConfiguredFeature<?, ?>> MEGA_PINE_KEY = registerKey("mega_pine");
     public static final RegistryKey<ConfiguredFeature<?, ?>> MEGA_PINE_SPRUCE_KEY = registerKey("mega_pine_spruce");
     public static final RegistryKey<ConfiguredFeature<?, ?>> FALLEN_PINE_TREE_KEY = registerKey("fallen_pine_tree");
 
     public static void bootstrap(Registerable<ConfiguredFeature<?, ?>> context) {
+
+        register(context, PINE_BEES_005_KEY, Feature.TREE, new TreeFeatureConfig.Builder(
+                BlockStateProvider.of(ModBlocks.PINE_LOG),
+                new StraightTrunkPlacer(6, 4, 0),
+
+                BlockStateProvider.of(ModBlocks.PINE_LEAVES),
+                new PineFoliagePlacer(ConstantIntProvider.create(1), ConstantIntProvider.create(1), UniformIntProvider.create(3, 4)),
+
+                new TwoLayersFeatureSize(2, 0, 2)
+        ).ignoreVines().decorators(List.of(new BeehiveTreeDecorator(0.05F))).build());
 
         register(context, MEGA_PINE_KEY, Feature.TREE, new TreeFeatureConfig.Builder(
                 BlockStateProvider.of(ModBlocks.PINE_LOG),

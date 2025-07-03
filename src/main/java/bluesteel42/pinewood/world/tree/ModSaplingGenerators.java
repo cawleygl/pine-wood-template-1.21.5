@@ -15,7 +15,7 @@ public class ModSaplingGenerators {
             Optional.of(ModConfiguredFeatures.MEGA_PINE_SPRUCE_KEY),
             Optional.of(TreeConfiguredFeatures.PINE),
             Optional.empty(),
-            Optional.empty(),
+            Optional.of(ModConfiguredFeatures.PINE_BEES_005_KEY),
             Optional.empty()
     );
 }

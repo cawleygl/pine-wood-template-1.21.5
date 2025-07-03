@@ -14,6 +14,7 @@ import java.util.List;
 
 public class ModPlacedFeatures {
 
+    public static final RegistryKey<PlacedFeature> PINE_BEES_005_PLACED_KEY = registerKey("pine_bees_005");
     public static final RegistryKey<PlacedFeature> MEGA_PINE_PLACED_KEY = registerKey("mega_pine");
     public static final RegistryKey<PlacedFeature> MEGA_PINE_SPRUCE_PLACED_KEY = registerKey("mega_pine_spruce");
     public static final RegistryKey<PlacedFeature> FALLEN_PINE_PLACED_KEY = registerKey("fallen_pine_tree");
@@ -21,6 +22,9 @@ public class ModPlacedFeatures {
     public static void bootstrap(Registerable<PlacedFeature> context) {
         var configuredFeatures = context.getRegistryLookup(RegistryKeys.CONFIGURED_FEATURE);
 
+        register(context, PINE_BEES_005_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.PINE_BEES_005_KEY),
+                PlacedFeatures.wouldSurvive(ModBlocks.PINE_SAPLING)
+        );
         register(context, MEGA_PINE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.MEGA_PINE_KEY),
                 PlacedFeatures.wouldSurvive(ModBlocks.PINE_SAPLING)
         );
