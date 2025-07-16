@@ -1,7 +1,7 @@
 package bluesteel42.pinewood.world;
 
 import bluesteel42.pinewood.PineWood;
-import bluesteel42.pinewood.block.ModBlocks;
+import bluesteel42.pinewood.standard_wood_initializer.block.StandardWoodModBlocks;
 import net.minecraft.registry.Registerable;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
@@ -23,16 +23,16 @@ public class ModPlacedFeatures {
         var configuredFeatures = context.getRegistryLookup(RegistryKeys.CONFIGURED_FEATURE);
 
         register(context, PINE_BEES_005_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.PINE_BEES_005_KEY),
-                PlacedFeatures.wouldSurvive(ModBlocks.PINE_SAPLING)
+                PlacedFeatures.wouldSurvive(StandardWoodModBlocks.MOD_SAPLING)
         );
         register(context, MEGA_PINE_HIGH_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.MEGA_PINE_HIGH_KEY),
-                PlacedFeatures.wouldSurvive(ModBlocks.PINE_SAPLING)
+                PlacedFeatures.wouldSurvive(StandardWoodModBlocks.MOD_SAPLING)
         );
         register(context, MEGA_PINE_LOW_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.MEGA_PINE_LOW_KEY),
-                PlacedFeatures.wouldSurvive(ModBlocks.PINE_SAPLING)
+                PlacedFeatures.wouldSurvive(StandardWoodModBlocks.MOD_SAPLING)
         );
         register(context, FALLEN_PINE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.FALLEN_PINE_TREE_KEY),
-                PlacedFeatures.wouldSurvive(ModBlocks.PINE_SAPLING)
+                PlacedFeatures.wouldSurvive(StandardWoodModBlocks.MOD_SAPLING)
         );
 
     }

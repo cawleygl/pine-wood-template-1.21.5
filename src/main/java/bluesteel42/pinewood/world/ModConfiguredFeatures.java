@@ -1,7 +1,7 @@
 package bluesteel42.pinewood.world;
 
 import bluesteel42.pinewood.PineWood;
-import bluesteel42.pinewood.block.ModBlocks;
+import bluesteel42.pinewood.standard_wood_initializer.block.StandardWoodModBlocks;
 import com.google.common.collect.ImmutableList;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
@@ -37,36 +37,36 @@ public class ModConfiguredFeatures {
     public static void bootstrap(Registerable<ConfiguredFeature<?, ?>> context) {
 
         register(context, PINE_BEES_005_KEY, Feature.TREE, new TreeFeatureConfig.Builder(
-                BlockStateProvider.of(ModBlocks.PINE_LOG),
+                BlockStateProvider.of(StandardWoodModBlocks.MOD_LOG),
                 new StraightTrunkPlacer(6, 4, 0),
 
-                BlockStateProvider.of(ModBlocks.PINE_LEAVES),
+                BlockStateProvider.of(StandardWoodModBlocks.MOD_LEAVES),
                 new PineFoliagePlacer(ConstantIntProvider.create(1), ConstantIntProvider.create(1), UniformIntProvider.create(3, 4)),
 
                 new TwoLayersFeatureSize(2, 0, 2)
         ).ignoreVines().decorators(List.of(new BeehiveTreeDecorator(0.05F))).build());
 
         register(context, MEGA_PINE_HIGH_KEY, Feature.TREE, new TreeFeatureConfig.Builder(
-                BlockStateProvider.of(ModBlocks.PINE_LOG),
+                BlockStateProvider.of(StandardWoodModBlocks.MOD_LOG),
                 new GiantTrunkPlacer(13, 2, 14),
 
-                BlockStateProvider.of(ModBlocks.PINE_LEAVES),
+                BlockStateProvider.of(StandardWoodModBlocks.MOD_LEAVES),
                 new MegaPineFoliagePlacer(ConstantIntProvider.create(0), ConstantIntProvider.create(0), UniformIntProvider.create(3, 7)),
 
                 new TwoLayersFeatureSize(1, 1, 2)
         ).decorators(ImmutableList.of(new AlterGroundTreeDecorator(BlockStateProvider.of(Blocks.PODZOL)))).build());
 
         register(context, MEGA_PINE_LOW_KEY, Feature.TREE, new TreeFeatureConfig.Builder(
-                BlockStateProvider.of(ModBlocks.PINE_LOG),
+                BlockStateProvider.of(StandardWoodModBlocks.MOD_LOG),
                 new GiantTrunkPlacer(13, 2, 14),
 
-                BlockStateProvider.of(ModBlocks.PINE_LEAVES),
+                BlockStateProvider.of(StandardWoodModBlocks.MOD_LEAVES),
                 new MegaPineFoliagePlacer(ConstantIntProvider.create(0), ConstantIntProvider.create(0), UniformIntProvider.create(7, 11)),
 
                 new TwoLayersFeatureSize(1, 1, 2)
         ).decorators(ImmutableList.of(new AlterGroundTreeDecorator(BlockStateProvider.of(Blocks.PODZOL)))).build());
 
-        register(context, FALLEN_PINE_TREE_KEY, Feature.FALLEN_TREE, new FallenTreeFeatureConfig.Builder(BlockStateProvider.of(ModBlocks.PINE_LOG), UniformIntProvider.create(6, 10))
+        register(context, FALLEN_PINE_TREE_KEY, Feature.FALLEN_TREE, new FallenTreeFeatureConfig.Builder(BlockStateProvider.of(StandardWoodModBlocks.MOD_LOG), UniformIntProvider.create(6, 10))
                 .logDecorators(
                         ImmutableList.of(
                                 new AttachedToLogsTreeDecorator(
