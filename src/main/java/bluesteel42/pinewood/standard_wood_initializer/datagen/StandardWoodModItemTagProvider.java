@@ -40,7 +40,7 @@ public class StandardWoodModItemTagProvider extends FabricTagProvider.ItemTagPro
         getOrCreateTagBuilder(ItemTags.BOATS).add(StandardWoodModBoats.MOD_BOAT.asItem());
         getOrCreateTagBuilder(ItemTags.CHEST_BOATS).add(StandardWoodModBoats.MOD_CHEST_BOAT.asItem());
 
-        getOrCreateTagBuilder(ItemTags.LEAVES).add(StandardWoodModBlocks.MOD_LEAVES.asItem());
+//        getOrCreateTagBuilder(ItemTags.LEAVES).add(StandardWoodModBlocks.MOD_LEAVES.asItem());
         getOrCreateTagBuilder(ItemTags.SAPLINGS).add(StandardWoodModBlocks.MOD_SAPLING.asItem());
     }
 

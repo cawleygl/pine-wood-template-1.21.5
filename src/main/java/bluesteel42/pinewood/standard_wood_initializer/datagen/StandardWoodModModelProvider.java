@@ -30,7 +30,7 @@ public class StandardWoodModModelProvider extends FabricModelProvider {
         swampPlankPool.family(StandardWoodModBlocks.MOD_SIGN_FAMILY);
         blockStateModelGenerator.registerHangingSign(StandardWoodModBlocks.STRIPPED_MOD_LOG, StandardWoodModBlocks.MOD_HANGING_SIGN, StandardWoodModBlocks.MOD_WALL_HANGING_SIGN);
 
-        blockStateModelGenerator.registerTintedBlockAndItem(StandardWoodModBlocks.MOD_LEAVES, TexturedModel.LEAVES, StandardWoodInitializer.LEAF_TINT_COLOR);
+//        blockStateModelGenerator.registerTintedBlockAndItem(StandardWoodModBlocks.MOD_LEAVES, TexturedModel.LEAVES, StandardWoodInitializer.LEAF_TINT_COLOR);
         blockStateModelGenerator.registerFlowerPotPlantAndItem(StandardWoodModBlocks.MOD_SAPLING, StandardWoodModBlocks.POTTED_MOD_SAPLING, BlockStateModelGenerator.CrossType.NOT_TINTED);
 
         blockStateModelGenerator.registerItemModel(StandardWoodModBoats.MOD_BOAT);

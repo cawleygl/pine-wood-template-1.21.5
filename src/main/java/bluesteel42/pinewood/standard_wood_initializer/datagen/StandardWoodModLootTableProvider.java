@@ -35,7 +35,7 @@ public class StandardWoodModLootTableProvider extends FabricBlockLootTableProvid
 
         addDrop(StandardWoodModBlocks.MOD_SAPLING);
         addDrop(StandardWoodModBlocks.POTTED_MOD_SAPLING, pottedPlantDrops(StandardWoodModBlocks.MOD_SAPLING));
-        addDrop(StandardWoodModBlocks.MOD_LEAVES, leavesDrops(StandardWoodModBlocks.MOD_LEAVES, StandardWoodModBlocks.MOD_SAPLING, 0.05f));
+//        addDrop(StandardWoodModBlocks.MOD_LEAVES, leavesDrops(StandardWoodModBlocks.MOD_LEAVES, StandardWoodModBlocks.MOD_SAPLING, 0.05f));
     }
 
     @Override

@@ -39,7 +39,7 @@ public class StandardWoodModBlockTagProvider extends FabricTagProvider.BlockTagP
 
         getOrCreateTagBuilder(BlockTags.WALL_HANGING_SIGNS).add(StandardWoodModBlocks.MOD_WALL_HANGING_SIGN);
 
-        getOrCreateTagBuilder(BlockTags.LEAVES).add(StandardWoodModBlocks.MOD_LEAVES);
+//        getOrCreateTagBuilder(BlockTags.LEAVES).add(StandardWoodModBlocks.MOD_LEAVES);
         getOrCreateTagBuilder(BlockTags.SAPLINGS).add(StandardWoodModBlocks.MOD_SAPLING);
         getOrCreateTagBuilder(BlockTags.FLOWER_POTS).add(StandardWoodModBlocks.POTTED_MOD_SAPLING);
     }

@@ -20,7 +20,7 @@ public class StandardWoodModRegistries {
     }
 
     public static void registerCompostables() {
-        CompostingChanceRegistry.INSTANCE.add(StandardWoodModBlocks.MOD_LEAVES, 0.3F);
+//        CompostingChanceRegistry.INSTANCE.add(StandardWoodModBlocks.MOD_LEAVES, 0.3F);
         CompostingChanceRegistry.INSTANCE.add(StandardWoodModBlocks.MOD_SAPLING, 0.3F);
     }
 
@@ -34,7 +34,7 @@ public class StandardWoodModRegistries {
         FlammableBlockRegistry.getDefaultInstance().add(StandardWoodModBlocks.MOD_FENCE_GATE, 5, 20);
         FlammableBlockRegistry.getDefaultInstance().add(StandardWoodModBlocks.MOD_FENCE, 5, 20);
         FlammableBlockRegistry.getDefaultInstance().add(StandardWoodModBlocks.MOD_STAIRS, 5, 20);
-        FlammableBlockRegistry.getDefaultInstance().add(StandardWoodModBlocks.MOD_LEAVES, 30, 60);
+//        FlammableBlockRegistry.getDefaultInstance().add(StandardWoodModBlocks.MOD_LEAVES, 30, 60);
     }
 
     public static void registerTrades() {

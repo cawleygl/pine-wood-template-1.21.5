@@ -1,7 +1,7 @@
 // 1.21.5	-999999999-01-01T00:00:00	Pine Wood/
 cc8cfe0f6da29d6fee2eb0bf5d55bc00a60352a1 data/pine-wood/worldgen/configured_feature/fallen_pine_tree.json
-a247bb96cfdda87689018118389dbe422077041f data/pine-wood/worldgen/configured_feature/mega_pine_high.json
-9bca7a59db3a5aa9cf0dc546062f1f631bb74f13 data/pine-wood/worldgen/configured_feature/mega_pine_low.json
+f4c8cd4118a87ef942e6cda30e75cd95a3aaa954 data/pine-wood/worldgen/configured_feature/mega_pine_high.json
+dacb769601c65baaf0db3f587879bfc3aa771d54 data/pine-wood/worldgen/configured_feature/mega_pine_low.json
 d053cbdea2ced7764b011a073fec6d824c8643d3 data/pine-wood/worldgen/configured_feature/pine_bees_005.json
 e50adaef0948c76bd22c57e5ca2d077d7c6d8877 data/pine-wood/worldgen/placed_feature/fallen_pine_tree.json
 e4debe3f938b9097c7a11288cf5b87d322b6d33e data/pine-wood/worldgen/placed_feature/mega_pine_high.json

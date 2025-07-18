@@ -1,6 +1,9 @@
 package bluesteel42.pinewood;
 
+import bluesteel42.pinewood.block.ModBlocks;
+import bluesteel42.pinewood.particle.ModParticles;
 import bluesteel42.pinewood.standard_wood_initializer.StandardWoodInitializer;
+import bluesteel42.pinewood.registries.ModRegistries;
 import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -19,6 +22,10 @@ public class PineWood implements ModInitializer {
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
 		StandardWoodInitializer.initalizeWoodType();
+		ModBlocks.initialize();
+		ModParticles.initialize();
+		ModRegistries.registerCompostables();
+		ModRegistries.registerFlammables();
 		LOGGER.info("Hello Fabric world!");
 	}
 }

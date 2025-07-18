@@ -24,5 +24,7 @@
   "item.pine-wood.pine_boat": "Pine Boat",
   "item.pine-wood.pine_chest_boat": "Pine Boat with Chest",
   "item.pine-wood.pine_sign": "Pine Sign",
-  "item.pine-wood.pine_hanging_sign": "Pine Hanging Sign"
+  "item.pine-wood.pine_hanging_sign": "Pine Hanging Sign",
+
+  "block.pine-wood.spruce_leaves": "Spruce Leaves"
 }

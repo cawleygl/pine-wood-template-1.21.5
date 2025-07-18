@@ -17,6 +17,7 @@ b75ed65c9eb124cc056e25a86552ad6e9c4e0596 assets/pine-wood/blockstates/pine_trapd
 ed4337255161426c39e3dc48c92236dd20c4dcc1 assets/pine-wood/blockstates/pine_wall_sign.json
 99c7859d0760fdc1dacc0ba6cead09a84ce1aead assets/pine-wood/blockstates/pine_wood.json
 f49be57531b29f18a2bf37f78f92a7ab8053c3bb assets/pine-wood/blockstates/potted_pine_sapling.json
+388aaa2ed8380fc1d0bcedbde49e70196a2bb692 assets/pine-wood/blockstates/spruce_leaves.json
 94c56a87b83ddcb72990399341c14189ce431dbb assets/pine-wood/blockstates/stripped_pine_log.json
 4fd3a9d8b8d69d7fd7698d3f91f7f5288a87ff2d assets/pine-wood/blockstates/stripped_pine_wood.json
 08fbb6252b7abf1144d7962b89de489dc4f738a6 assets/pine-wood/items/pine_boat.json
@@ -37,6 +38,7 @@ e6c561dff229b6e5d94ac2f85d011d97db996a16 assets/pine-wood/items/pine_sign.json
 9fd758e6672d1b622a97467da525a97abbe5fa2d assets/pine-wood/items/pine_trapdoor.json
 940a84816c1fbc2c95cf5d36d7c1b75251ef96a0 assets/pine-wood/items/pine_wood.json
 649a3a71b1a47885c2ca5a6b260f9e253d6fb5d1 assets/pine-wood/items/potted_pine_sapling.json
+5a8106fe694bf29dc66718a63fa9c3d85bcec652 assets/pine-wood/items/spruce_leaves.json
 b488b751dca1692ac6985a0159434d7cf7339440 assets/pine-wood/items/stripped_pine_log.json
 5a39d6df9c8a9b2ca860a1c7dd0d59814c47dbc5 assets/pine-wood/items/stripped_pine_wood.json
 be9def6eaf0ff6e38ece0c31c600c74d18d51265 assets/pine-wood/models/block/pine_button.json
@@ -76,6 +78,7 @@ a78ff415d41643d8385bc1593a16e1656bf1fd64 assets/pine-wood/models/block/pine_trap
 16600f29c72af8f7ba324444854fda86544a8067 assets/pine-wood/models/block/pine_trapdoor_top.json
 ea5a857b26080c8eb4363d172d750c2d89d1ba76 assets/pine-wood/models/block/pine_wood.json
 fa5ce03b785609b5dcece80add66c79e4055063b assets/pine-wood/models/block/potted_pine_sapling.json
+9c71e32db2b66df4939e4b6e93ceb8c8be87a350 assets/pine-wood/models/block/spruce_leaves.json
 f3aa19af126da760dc675bf75337ab3aa71afc27 assets/pine-wood/models/block/stripped_pine_log.json
 714f89fca5e1d15d817b72e6cae8050641453b55 assets/pine-wood/models/block/stripped_pine_log_horizontal.json
 aac5bda58093d335e107ce1d231385ab0f06bf4e assets/pine-wood/models/block/stripped_pine_wood.json

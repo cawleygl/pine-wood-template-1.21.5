@@ -20,7 +20,7 @@ import java.util.Optional;
 public class StandardWoodInitializer {
     /*
      * Standard Wood Type Initializer
-     *  - Edits: None
+     *  - Edits: Removed leaves for custom falling leaf particles
      */
     public static String MOD_ID = PineWood.MOD_ID;
     public static String WOOD_TYPE = "pine";
@@ -51,11 +51,11 @@ public class StandardWoodInitializer {
         TerraformBoatClientHelper.registerModelLayers(StandardWoodModBoats.MOD_BOATS_ID);
 
         // Color Leaves
-        ColorProviderRegistry.BLOCK.register((state, view, pos, tintIndex) -> {
-            if (view == null || pos == null) {
-                return LEAF_TINT_COLOR;
-            }
-            return BiomeColors.getFoliageColor(view, pos);
-        }, StandardWoodModBlocks.MOD_LEAVES);
+//        ColorProviderRegistry.BLOCK.register((state, view, pos, tintIndex) -> {
+//            if (view == null || pos == null) {
+//                return LEAF_TINT_COLOR;
+//            }
+//            return BiomeColors.getFoliageColor(view, pos);
+//        }, StandardWoodModBlocks.MOD_LEAVES);
     }
 }

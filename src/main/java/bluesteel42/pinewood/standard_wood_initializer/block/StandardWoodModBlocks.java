@@ -172,13 +172,13 @@ public class StandardWoodModBlocks {
             .sign(StandardWoodModBlocks.MOD_STANDING_SIGN, StandardWoodModBlocks.MOD_WALL_SIGN)
             .group("wooden").unlockCriterionName("has_planks").build();
 
-    public static final Block MOD_LEAVES = register(
-            StandardWoodInitializer.WOOD_TYPE + "_leaves",
-            settings -> new TintedParticleLeavesBlock(0.01F, settings),
-            Blocks.createLeavesSettings(BlockSoundGroup.GRASS),
-            true,
-            true
-    );
+//    public static final Block MOD_LEAVES = register(
+//            StandardWoodInitializer.WOOD_TYPE + "_leaves",
+//            settings -> new TintedParticleLeavesBlock(0.01F, settings),
+//            Blocks.createLeavesSettings(BlockSoundGroup.GRASS),
+//            true,
+//            true
+//    );
     public static final Block MOD_SAPLING = register(
             StandardWoodInitializer.WOOD_TYPE + "_sapling",
             settings -> new SaplingBlock(StandardWoodModSaplingGenerators.MOD_SAPLING_GENERATOR, settings),
@@ -231,7 +231,7 @@ public class StandardWoodModBlocks {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL)
                 .register((itemGroup) -> {
                     itemGroup.addAfter(Items.PALE_OAK_LOG, StandardWoodModBlocks.MOD_LOG);
-                    itemGroup.addAfter(Items.PALE_OAK_LEAVES, StandardWoodModBlocks.MOD_LEAVES);
+//                    itemGroup.addAfter(Items.PALE_OAK_LEAVES, StandardWoodModBlocks.MOD_LEAVES);
                     itemGroup.addAfter(Items.PALE_OAK_SAPLING, StandardWoodModBlocks.MOD_SAPLING);
                 });
     }

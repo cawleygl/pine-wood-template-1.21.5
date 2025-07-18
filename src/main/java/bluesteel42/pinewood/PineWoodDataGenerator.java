@@ -13,10 +13,10 @@ public class PineWoodDataGenerator implements DataGeneratorEntrypoint {
 	@Override
 	public void onInitializeDataGenerator(FabricDataGenerator fabricDataGenerator) {
 		FabricDataGenerator.Pack pack = fabricDataGenerator.createPack();
-		pack.addProvider(StandardWoodModBlockTagProvider::new);
-		pack.addProvider(StandardWoodModItemTagProvider::new);
-		pack.addProvider(StandardWoodModLootTableProvider::new);
-		pack.addProvider(StandardWoodModModelProvider::new);
+		pack.addProvider(ModBlockTagProvider::new);
+		pack.addProvider(ModItemTagProvider::new);
+		pack.addProvider(ModLootTableProvider::new);
+		pack.addProvider(ModModelProvider::new);
 		pack.addProvider(StandardWoodModRecipeProvider::new);
 		pack.addProvider(ModRegistryDataGenerator::new);
 	}

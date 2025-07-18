@@ -1,6 +1,7 @@
 package bluesteel42.pinewood.world;
 
 import bluesteel42.pinewood.PineWood;
+import bluesteel42.pinewood.block.ModBlocks;
 import bluesteel42.pinewood.standard_wood_initializer.block.StandardWoodModBlocks;
 import com.google.common.collect.ImmutableList;
 import net.minecraft.block.BlockState;
@@ -40,7 +41,7 @@ public class ModConfiguredFeatures {
                 BlockStateProvider.of(StandardWoodModBlocks.MOD_LOG),
                 new StraightTrunkPlacer(6, 4, 0),
 
-                BlockStateProvider.of(StandardWoodModBlocks.MOD_LEAVES),
+                BlockStateProvider.of(ModBlocks.PINE_LEAVES),
                 new PineFoliagePlacer(ConstantIntProvider.create(1), ConstantIntProvider.create(1), UniformIntProvider.create(3, 4)),
 
                 new TwoLayersFeatureSize(2, 0, 2)
@@ -50,8 +51,8 @@ public class ModConfiguredFeatures {
                 BlockStateProvider.of(StandardWoodModBlocks.MOD_LOG),
                 new GiantTrunkPlacer(13, 2, 14),
 
-                BlockStateProvider.of(StandardWoodModBlocks.MOD_LEAVES),
-                new MegaPineFoliagePlacer(ConstantIntProvider.create(0), ConstantIntProvider.create(0), UniformIntProvider.create(3, 7)),
+                BlockStateProvider.of(ModBlocks.PINE_LEAVES),
+                new MegaPineFoliagePlacer(ConstantIntProvider.create(0), ConstantIntProvider.create(0), UniformIntProvider.create(3, 6)),
 
                 new TwoLayersFeatureSize(1, 1, 2)
         ).decorators(ImmutableList.of(new AlterGroundTreeDecorator(BlockStateProvider.of(Blocks.PODZOL)))).build());
@@ -60,8 +61,8 @@ public class ModConfiguredFeatures {
                 BlockStateProvider.of(StandardWoodModBlocks.MOD_LOG),
                 new GiantTrunkPlacer(13, 2, 14),
 
-                BlockStateProvider.of(StandardWoodModBlocks.MOD_LEAVES),
-                new MegaPineFoliagePlacer(ConstantIntProvider.create(0), ConstantIntProvider.create(0), UniformIntProvider.create(7, 11)),
+                BlockStateProvider.of(ModBlocks.PINE_LEAVES),
+                new MegaPineFoliagePlacer(ConstantIntProvider.create(0), ConstantIntProvider.create(0), UniformIntProvider.create(5, 8)),
 
                 new TwoLayersFeatureSize(1, 1, 2)
         ).decorators(ImmutableList.of(new AlterGroundTreeDecorator(BlockStateProvider.of(Blocks.PODZOL)))).build());
